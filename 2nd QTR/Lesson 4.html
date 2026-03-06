@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lesson 4</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body        >
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+<!-- Intro -->
+					<div id="intro">
+						<h1>Electronic<br />
+						Portfolio
+						</h1>
+						<p>Created by Gian Sonsing of 9 - Family.</p>
+					
+					</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+						<ul class="links">
+							<li><a href="../elements.html">Back</a></li>
+							<li><a href="Lesson 1.html">Lesson 1</a></li>
+							<li><a href="Lesson 2.html">Lesson 2</a></li>
+							<li><a href="Lesson 3.html">Lesson 3</a></li>
+							<li class="active"><a href="Lesson 4.html">Lesson 4</a></li>
+							<li><a href="Lesson 5.html">Lesson 5</a></li>
+							<li><a href="Lesson 6.html">Lesson 6</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"> October, 2025</span>
+									<h1>Lesson 4: CSS Rules and Classes</h1>
+								</header>
+								<h1></h1>
+
+<h2>1. CSS Rules</h2>
+<p>A CSS rule defines how HTML elements should look or behave. Each rule has two main parts: a <b>selector</b> and a <b>declaration block</b>.</p>
+<ul>
+  <li><b>Selector</b> – Targets the HTML element you want to style (e.g., <code>p</code>, <code>div</code>, <code>h1</code>).</li>
+  <li><b>Declaration Block</b> – Contains one or more declarations separated by semicolons. Each declaration has a property and a value (e.g., <code>color: blue;</code>).</li>
+</ul>
+<p>Example of a CSS rule:</p>
+<pre>
+p {
+  color: blue;
+  font-size: 16px;
+}
+</pre>
+
+<h2>2. CSS Selectors</h2>
+<p>Selectors are used to choose the specific HTML element(s) you want to style. The most common types are:</p>
+<ul>
+  <li><b>Type Selector</b> – Styles all elements of a specific tag (e.g., <code>p</code>).</li>
+  <li><b>Class Selector</b> – Styles elements with a specific class name, written with a dot (e.g., <code>.highlight</code>).</li>
+  <li><b>ID Selector</b> – Styles a single element with a unique ID, written with a hash symbol (e.g., <code>#main</code>).</li>
+  <li><b>Universal Selector</b> – Styles all elements on the page (e.g., <code>* {margin:0;}</code>).</li>
+</ul>
+
+<h2>3. CSS Classes</h2>
+<p>Classes are used to style multiple elements with the same appearance. To define a class, use a period (<code>.</code>) followed by the class name in your CSS. Then apply it to any HTML element using the <code>class</code> attribute.</p>
+<pre>
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+&lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+</pre>
+
+<h2>4. CSS IDs</h2>
+<p>IDs are similar to classes but are meant to be unique — only used once per page. To define an ID, use a hash (<code>#</code>) before its name.</p>
+<pre>
+#header {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+&lt;div id="header"&gt;Welcome!&lt;/div&gt;
+</pre>
+
+<h2>5. Comments in CSS</h2>
+<p>Comments are notes in your code that don’t affect how it runs. They are written inside <code>/* ... */</code>.</p>
+<pre>
+/* This is a comment */
+</pre>
+
+<h2>6. Summary</h2>
+<p>CSS rules and classes are the foundation of styling in web design. Selectors help target specific elements, while classes and IDs make it easier to apply consistent styles throughout your page.</p>
+
+<h2>7. What I Learned</h2>
+<p>In this lesson, I learned how CSS rules and classes work together to make a website look nice and organized. I understand how selectors can target certain parts of a webpage and how I can use classes to style many things at once. I also learned the difference between a class and an ID, which I think is really useful for web design. This lesson helped me realize how CSS makes everything look professional and neat.</p>
+
+						
+						
+</ul>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+
+	</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lesson 5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body        >
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+<!-- Intro -->
+					<div id="intro">
+						<h1>Electronic<br />
+						Portfolio
+						</h1>
+						<p>Created by Gian Sonsing of 9 - Family.</p>
+						
+					</div>
+				<!-- Nav -->
+				<nav id="nav">
+						<ul class="links">
+							<li><a href="../elements.html">Back</a></li>
+							<li><a href="Lesson 1.html">Lesson 1</a></li>
+							<li><a href="Lesson 2.html">Lesson 2</a></li>
+							<li><a href="Lesson 3.html">Lesson 3</a></li>
+							<li><a href="Lesson 4.html">Lesson 4</a></li>
+							<li class="active"><a href="Lesson 5.html">Lesson 5</a></li>
+							<li><a href="Lesson 6.html">Lesson 6</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"> October, 2025</span>
+									<h1>Lesson 5: CSS Positioning</h1>
+								</header>
+								<h1></h1>
+
+<h2>1. Introduction to CSS Positioning</h2>
+<p>The <b>position</b> property in CSS determines how elements are placed on a webpage. It helps designers control the layout and create organized, responsive pages. There are five main types of positioning: <b>static</b>, <b>relative</b>, <b>absolute</b>, <b>fixed</b>, and <b>sticky</b>.</p>
+
+<h2>2. Types of CSS Positioning</h2>
+<ul>
+  <li><b>Static</b> – The default position. Elements are placed in the normal flow of the document.</li>
+  <li><b>Relative</b> – Moves the element relative to its normal position using properties like <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code>.</li>
+  <li><b>Absolute</b> – Positions the element relative to its nearest positioned ancestor. It is removed from the normal document flow.</li>
+  <li><b>Fixed</b> – Stays in the same position even when scrolling the page, often used for navigation bars.</li>
+  <li><b>Sticky</b> – Acts like relative positioning until the element reaches a specific point on the page, then becomes fixed.</li>
+</ul>
+
+<h2>3. Float and Clear Properties</h2>
+<p>The <b>float</b> property is used to move elements to the left or right side of a container. It is often used to place text beside images.  
+The <b>clear</b> property prevents elements from floating next to others, forcing them to appear below floated elements.</p>
+<pre>
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+p {
+  clear: both;
+}
+</pre>
+
+<h2>4. Flexbox Layout</h2>
+<p><b>Flexbox</b> is a modern layout system that makes it easier to align and distribute space among items inside a container. It helps create flexible and responsive designs.</p>
+<pre>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</pre>
+<p>Flexbox is especially useful for centering content and organizing elements in rows or columns.</p>
+
+<h2>5. Grid Layout</h2>
+<p>The <b>CSS Grid</b> layout allows designers to create two-dimensional layouts. It uses rows and columns to arrange items neatly.</p>
+<pre>
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+</pre>
+<p>Grid layouts are powerful for building structured webpages like dashboards or galleries.</p>
+
+<h2>6. Summary</h2>
+<p>CSS positioning and layout properties help control how elements appear on the screen. Using position, float, flexbox, and grid gives web designers flexibility and precision when organizing content.</p>
+
+<h2>7. What I Learned</h2>
+<p>In this lesson, I learned how to use different positioning styles to control where things go on a webpage. I now understand how properties like float, flexbox, and grid make it easier to organize content. I found flexbox really interesting because it makes centering things so much simpler. Learning this made me realize how web designers control the layout of websites I see every day, and it made me appreciate how much planning goes into a clean and balanced page.</p>
+
+<hr>
+
+						
+						
+</ul>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+
+
+	</body>
+</html>
