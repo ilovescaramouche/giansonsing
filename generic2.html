@@ -31,7 +31,7 @@
                 <li><a href="generic.html">2nd Quarter A.P CONTENT</a></li>
                 <li><a href="elements.html">2nd Quarter I.C.T CONTENT</a></li>
                 <li><a href="4AP.html">4th Quarter A.P CONTENT</a></li>
-                <li  class="active"><a href="generic2.html">3rd and 4th Quarter ICT CONTENT</a></li>
+<li><a href="generic2.html">ICT CONTENT (1st, 3rd & 4th QTR)</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -43,6 +43,327 @@
 
         <!-- Main -->
         <div id="main">
+
+            <h2> 1st Quarter </h2>
+            <h3> Lessons </h3>
+
+            <!-- Lesson 1 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 1: Introduction to Hyperlinks</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L1: HYPERLINKS ✪</h3>
+                
+                <h4>What is a Hyperlink?</h4>
+                <p>A hyperlink (or link) is a connection from one web page to another web page or different sections within the same page. It allows users to navigate between pages.</p>
+
+                <h4>Types of Hyperlinks</h4>
+                <ul>
+                    <li><strong>Absolute Hyperlink</strong> – Contains the full URL including protocol (http:// or https://)</li>
+                    <li><strong>Relative Hyperlink</strong> – Points to a file relative to the current page location</li>
+                    <li><strong>Named Anchor</strong> – Links to a specific section within the same page using #id</li>
+                </ul>
+
+                <h4>Attributes of <a> Tag</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>href</td><td>Specifies the URL of the page the link goes to</td></tr>
+                    <tr><td>target</td><td>Specifies where to open the linked document</td></tr>
+                    <tr><td>name</td><td>Creates a named anchor for linking within the page</td></tr>
+                </table>
+
+                <h4>Target Attribute Values</h4>
+                <table>
+                    <tr><th>Value</th><th>Description</th></tr>
+                    <tr><td>_blank</td><td>Opens the linked document in a new tab or window</td></tr>
+                    <tr><td>_self</td><td>Opens the linked document in the same frame (default)</td></tr>
+                    <tr><td>_parent</td><td>Opens the linked document in the parent frame</td></tr>
+                    <tr><td>_top</td><td>Opens the linked document in the full body of the window</td></tr>
+                </table>
+
+                <h4>Accessing Links</h4>
+                <ul>
+                    <li><strong>Pointer</strong> – Click on the link to navigate</li>
+                    <li><strong>Tab</strong> – Use keyboard tab to navigate through links</li>
+                    <li><strong>Access Key</strong> – Use keyboard shortcuts (Alt + key) to access links</li>
+                </ul>
+
+                <h4>States of Hyperlinks</h4>
+                <ul>
+                    <li><strong>hover</strong> – When mouse is over the link</li>
+                    <li><strong>active</strong> – When the link is being clicked</li>
+                    <li><strong>visited</strong> – When the link has been clicked before</li>
+                </ul>
+            </div>
+
+            <!-- Lesson 2 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 2: Hyperlinks - Target Attributes and Email Links</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L2: TARGET ATTRIBUTES & EMAIL LINKS ✪</h3>
+
+                <h4>Target Attribute Examples</h4>
+                <table>
+                    <tr><th>Example</th><th>Description</th></tr>
+                    <tr><td>target="_self"</td><td>Opens in the same window (default)</td></tr>
+                    <tr><td>target="_blank"</td><td>Opens in a new window/tab</td></tr>
+                    <tr><td>target="_parent"</td><td>Opens in the parent frame</td></tr>
+                    <tr><td>target="_top"</td><td>Opens in the full window, breaking all frames</td></tr>
+                </table>
+
+                <h4>Email Links</h4>
+                <p>To create a link that opens the user's email client, use the <code>mailto:</code> protocol:</p>
+                <pre><a href="mailto:email@example.com">Send Email</a></pre>
+
+                <h4>External Links</h4>
+                <p>Links to external websites use absolute URLs:</p>
+                <pre><a href="https://www.google.com" target="_blank">Google</a></pre>
+            </div>
+
+            <!-- Lesson 3 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 3: HTML Links, Dead Links, and Forms</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L3: HTML LINKS & FORMS ✪</h3>
+
+                <h4>Types of Links</h4>
+                <ul>
+                    <li><strong>External Links</strong> – Links to other websites</li>
+                    <li><strong>Internal Links</strong> – Links to pages within the same website</li>
+                    <li><strong>Dead Links</strong> – Links that don't lead anywhere (href="#")</li>
+                </ul>
+
+                <h4>Using Images/GIFs as Links</h4>
+                <pre><a href="page.html"><img src="image.gif" alt="description"></a></pre>
+
+                <h4>Forms: Definition</h4>
+                <p>An HTML form is used to collect user input. It contains form elements like text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+
+                <h4>Form Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>action</td><td>Specifies where to send the form data</td></tr>
+                    <tr><td>method</td><td>Specifies the HTTP method (GET or POST)</td></tr>
+                </table>
+
+                <h4>Input Elements</h4>
+                <ul>
+                    <li><strong>Textbox</strong> – <input type="text"></li>
+                    <li><strong>Password</strong> – <input type="password"></li>
+                    <li><strong>Radio</strong> – <input type="radio"></li>
+                    <li><strong>Checkbox</strong> – <input type="checkbox"></li>
+                    <li><strong>Dropdown</strong> – <select> and <option></li>
+                    <li><strong>Textarea</strong> – <textarea></li>
+                    <li><strong>Submit</strong> – <input type="submit"></li>
+                    <li><strong>Reset</strong> – <input type="reset"></li>
+                </ul>
+
+                <h4>Special Form Elements</h4>
+                <ul>
+                    <li><strong><keygen></strong> – Generates a key pair for form submission</li>
+                    <li><strong><datalist></strong> – Provides a list of pre-defined options</li>
+                    <li><strong><output></strong> – Represents the result of a calculation</li>
+                </ul>
+            </div>
+
+            <!-- Lesson 4 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 4: HTML5 Input Types</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L4: HTML5 INPUT TYPES ✪</h3>
+
+                <h4>Input Type Tags in HTML5</h4>
+                <table>
+                    <tr><th>Type</th><th>Description</th></tr>
+                    <tr><td>color</td><td>Color picker</td></tr>
+                    <tr><td>date</td><td>Date picker</td></tr>
+                    <tr><td>email</td><td>Email input field</td></tr>
+                    <tr><td>month</td><td>Month and year picker</td></tr>
+                    <tr><td>datetime</td><td>Date and time picker</td></tr>
+                    <tr><td>number</td><td>Numeric input field</td></tr>
+                    <tr><td>range</td><td>Slider control</td></tr>
+                    <tr><td>search</td><td>Search field</td></tr>
+                    <tr><td>time</td><td>Time picker</td></tr>
+                    <tr><td>url</td><td>URL input field</td></tr>
+                    <tr><td>tel</td><td>Telephone input field</td></tr>
+                </table>
+
+                <h4>Form Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>autocomplete</td><td>Enables/disables autocomplete</td></tr>
+                    <tr><td>novalidate</td><td>Disables form validation</td></tr>
+                </table>
+
+                <h4>Input Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>autofocus</td><td>Focuses input on page load</td></tr>
+                    <tr><td>formaction</td><td>Overrides form's action</td></tr>
+                    <tr><td>formenctype</td><td>Overrides form's enctype</td></tr>
+                    <tr><td>formmethod</td><td>Overrides form's method</td></tr>
+                    <tr><td>formnovalidate</td><td>Overrides form's novalidate</td></tr>
+                    <tr><td>formtarget</td><td>Overrides form's target</td></tr>
+                    <tr><td>height/width</td><td>Specifies dimensions</td></tr>
+                    <tr><td>multiple</td><td>Allows multiple selections</td></tr>
+                    <tr><td>pattern</td><td>Specifies validation pattern</td></tr>
+                    <tr><td>placeholder</td><td>Shows placeholder text</td></tr>
+                    <tr><td>required</td><td>Makes field mandatory</td></tr>
+                </table>
+            </div>
+
+            <!-- Lesson 5 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 5: Input Element Types and Attributes</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L5: INPUT ELEMENTS ✪</h3>
+
+                <h4><input> Element Types</h4>
+                <table>
+                    <tr><th>Type</th><th>Description</th></tr>
+                    <tr><td>text</td><td>Single-line text input</td></tr>
+                    <tr><td>password</td><td>Hidden text input</td></tr>
+                    <tr><td>checkbox</td><td>Checkbox (multiple selections)</td></tr>
+                    <tr><td>radio</td><td>Radio button (single selection)</td></tr>
+                    <tr><td>submit</td><td>Submit button</td></tr>
+                    <tr><td>reset</td><td>Reset button</td></tr>
+                    <tr><td>file</td><td>File upload</td></tr>
+                    <tr><td>image</td><td>Image as submit button</td></tr>
+                </table>
+
+                <h4>Input Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>name</td><td>Name of the input field</td></tr>
+                    <tr><td>type</td><td>Type of input</td></tr>
+                    <tr><td>size</td><td>Width of input field (characters)</td></tr>
+                    <tr><td>value</td><td>Default value</td></tr>
+                    <tr><td>checked</td><td>Pre-selected option</td></tr>
+                </table>
+
+                <h4>Creating Textboxes and Text Areas</h4>
+                <pre><input type="text" name="username">
+<textarea name="message" rows="4" cols="30"></textarea></pre>
+            </div>
+
+            <!-- Lesson 6 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 6: Radio Buttons, Checkboxes, and Dropdowns</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L6: FORM CONTROLS ✪</h3>
+
+                <h4>Radio Buttons</h4>
+                <p>Radio buttons allow only ONE selection from a group of options.</p>
+                <pre><input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other" checked> Other</pre>
+
+                <h4>Checkboxes</h4>
+                <p>Checkboxes allow MULTIPLE selections.</p>
+                <pre><input type="checkbox" name="hobby1" value="reading"> Reading
+<input type="checkbox" name="hobby2" value="gaming" checked> Gaming
+<input type="checkbox" name="hobby3" value="sports"> Sports</pre>
+
+                <h4>Dropdown Menus</h4>
+                <p>Using <select> and <option> tags:</p>
+                <pre><select name="country">
+  <option value="ph">Philippines</option>
+  <option value="us" selected>United States</option>
+  <option value="uk">United Kingdom</option>
+</select></pre>
+
+                <h4><select> and <option> Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>name</td><td>Name of the dropdown</td></tr>
+                    <tr><td>size</td><td>Number of visible options</td></tr>
+                    <tr><td>value</td><td>Value sent to server</td></tr>
+                    <tr><td>selected</td><td>Pre-selected option</td></tr>
+                </table>
+            </div>
+
+            <!-- Lesson 7 -->
+            <button class="accordion">
+                <span class="accordion-text">Lesson 7: Feedback Forms and File Upload</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <h3>✪ L7: FEEDBACK FORMS & FILE UPLOAD ✪</h3>
+
+                <h4>Feedback Form</h4>
+                <pre><form action="mailto:email@example.com" method="post" enctype="text/plain">
+  Name: <input type="text" name="name"><br>
+  Message: <textarea name="message"></textarea><br>
+  <input type="submit" value="Send">
+</form></pre>
+
+                <h4>Form Attributes</h4>
+                <table>
+                    <tr><th>Attribute</th><th>Description</th></tr>
+                    <tr><td>action</td><td>URL where form data is sent</td></tr>
+                    <tr><td>method</td><td>HTTP method (GET/POST)</td></tr>
+                    <tr><td>enctype</td><td>Encoding type for form data</td></tr>
+                </table>
+
+                <h4>Submit and Reset Buttons</h4>
+                <pre><input type="submit" value="Submit">
+<input type="reset" value="Reset"></pre>
+
+                <h4>File Upload</h4>
+                <pre><input type="file" name="myfile" accept=".pdf,.doc,.docx"></pre>
+
+                <h4>Accept Attribute Values</h4>
+                <table>
+                    <tr><th>Value</th><th>Description</th></tr>
+                    <tr><td>.pdf, .doc</td><td>File extensions</td></tr>
+                    <tr><td>audio/*</td><td>All audio files</td></tr>
+                    <tr><td>video/*</td><td>All video files</td></tr>
+                    <tr><td>image/*</td><td>All image files</td></tr>
+                    <tr><td>media_type</td><td>Specific media type</td></tr>
+                </table>
+            </div>
+
+            <h3> Events</h3>
+            <button class="accordion">
+                <span class="accordion-text">Buwan ng Wika</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <p><img src="images/BW1.jpg" alt="Buwan ng Wika Image 1" /></p>
+                <p><img src="images/BW2.jpg" alt="Buwan ng Wika Image 2" /></p>
+            </div>
+            <button class="accordion">
+                <span class="accordion-text">Intrams</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <p><img src="images/intra1.jpg" alt="Intrams Image 1" /></p>
+                <p><img src="images/intra2.jpg" alt="Intrams Image 2" /></p>
+                <video width="500" controls>
+                    <source src="images/intra.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <button class="accordion">
+                <span class="accordion-text">Cluster Meet</span>
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="panel">
+                <p><img src="images/cluster1.jpg" alt="Cluster Meet Image 1" /></p>
+                <p><img src="images/cluster2.jpg" alt="Cluster Meet Image 2" /></p>
+            </div>
+
             <h2> 3rd Quarter </h2>
             <h3> Lessons </h3>
             <button class="accordion">

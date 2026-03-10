@@ -1,17 +1,19 @@
-﻿const acc = document.getElementsByClassName("accordion");
+﻿document.addEventListener("DOMContentLoaded", function() {
+    const acc = document.getElementsByClassName("accordion");
 
-for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
 
-        const panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
+            const panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+});
 function loadLesson(num) {
     const contentBox = document.getElementById("lessonContent");
 
