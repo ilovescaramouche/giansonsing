@@ -29,7 +29,7 @@
             <ul class="links">
                 <li><a href="index.html">Personal Information</a></li>
                 <li><a href="generic.html">2nd Quarter A.P CONTENT</a></li>
-                <li><a href="elements.html">2nd Quarter I.C.T CONTENT</a></li>
+                ="elements.html"><li><a href2nd Quarter I.C.T CONTENT</a></li>
                 <li><a href="4AP.html">4th Quarter A.P CONTENT</a></li>
 <li><a href="generic2.html">ICT CONTENT (1st, 3rd & 4th QTR)</a></li>
             </ul>
@@ -48,677 +48,115 @@
             <h3> Lessons </h3>
 
             <!-- Lesson 1 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 1: Introduction to Hyperlinks</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(1)">
+                Lesson 1: Introduction to Hyperlinks
             </button>
-            <div class="panel">
-                <h3>✪ L1: HYPERLINKS ✪</h3>
-                
-                <h4>What is a Hyperlink?</h4>
-                <p>A hyperlink (or link) is a connection from one web page to another web page or different sections within the same page. It allows users to navigate between pages.</p>
-
-                <h4>Types of Hyperlinks</h4>
-                <ul>
-                    <li><strong>Absolute Hyperlink</strong> – Contains the full URL including protocol (http:// or https://)</li>
-                    <li><strong>Relative Hyperlink</strong> – Points to a file relative to the current page location</li>
-                    <li><strong>Named Anchor</strong> – Links to a specific section within the same page using #id</li>
-                </ul>
-
-                <h4>Attributes of <a> Tag</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>href</td><td>Specifies the URL of the page the link goes to</td></tr>
-                    <tr><td>target</td><td>Specifies where to open the linked document</td></tr>
-                    <tr><td>name</td><td>Creates a named anchor for linking within the page</td></tr>
-                </table>
-
-                <h4>Target Attribute Values</h4>
-                <table>
-                    <tr><th>Value</th><th>Description</th></tr>
-                    <tr><td>_blank</td><td>Opens the linked document in a new tab or window</td></tr>
-                    <tr><td>_self</td><td>Opens the linked document in the same frame (default)</td></tr>
-                    <tr><td>_parent</td><td>Opens the linked document in the parent frame</td></tr>
-                    <tr><td>_top</td><td>Opens the linked document in the full body of the window</td></tr>
-                </table>
-
-                <h4>Accessing Links</h4>
-                <ul>
-                    <li><strong>Pointer</strong> – Click on the link to navigate</li>
-                    <li><strong>Tab</strong> – Use keyboard tab to navigate through links</li>
-                    <li><strong>Access Key</strong> – Use keyboard shortcuts (Alt + key) to access links</li>
-                </ul>
-
-                <h4>States of Hyperlinks</h4>
-                <ul>
-                    <li><strong>hover</strong> – When mouse is over the link</li>
-                    <li><strong>active</strong> – When the link is being clicked</li>
-                    <li><strong>visited</strong> – When the link has been clicked before</li>
-                </ul>
-            </div>
 
             <!-- Lesson 2 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 2: Hyperlinks - Target Attributes and Email Links</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(2)">
+                Lesson 2: Hyperlinks - Target Attributes and Email Links
             </button>
-            <div class="panel">
-                <h3>✪ L2: TARGET ATTRIBUTES & EMAIL LINKS ✪</h3>
-
-                <h4>Target Attribute Examples</h4>
-                <table>
-                    <tr><th>Example</th><th>Description</th></tr>
-                    <tr><td>target="_self"</td><td>Opens in the same window (default)</td></tr>
-                    <tr><td>target="_blank"</td><td>Opens in a new window/tab</td></tr>
-                    <tr><td>target="_parent"</td><td>Opens in the parent frame</td></tr>
-                    <tr><td>target="_top"</td><td>Opens in the full window, breaking all frames</td></tr>
-                </table>
-
-                <h4>Email Links</h4>
-                <p>To create a link that opens the user's email client, use the <code>mailto:</code> protocol:</p>
-                <pre><a href="mailto:email@example.com">Send Email</a></pre>
-
-                <h4>External Links</h4>
-                <p>Links to external websites use absolute URLs:</p>
-                <pre><a href="https://www.google.com" target="_blank">Google</a></pre>
-            </div>
 
             <!-- Lesson 3 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 3: HTML Links, Dead Links, and Forms</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(3)">
+                Lesson 3: HTML Links, Dead Links, and Forms
             </button>
-            <div class="panel">
-                <h3>✪ L3: HTML LINKS & FORMS ✪</h3>
-
-                <h4>Types of Links</h4>
-                <ul>
-                    <li><strong>External Links</strong> – Links to other websites</li>
-                    <li><strong>Internal Links</strong> – Links to pages within the same website</li>
-                    <li><strong>Dead Links</strong> – Links that don't lead anywhere (href="#")</li>
-                </ul>
-
-                <h4>Using Images/GIFs as Links</h4>
-                <pre><a href="page.html"><img src="image.gif" alt="description"></a></pre>
-
-                <h4>Forms: Definition</h4>
-                <p>An HTML form is used to collect user input. It contains form elements like text fields, checkboxes, radio buttons, submit buttons, etc.</p>
-
-                <h4>Form Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>action</td><td>Specifies where to send the form data</td></tr>
-                    <tr><td>method</td><td>Specifies the HTTP method (GET or POST)</td></tr>
-                </table>
-
-                <h4>Input Elements</h4>
-                <ul>
-                    <li><strong>Textbox</strong> – <input type="text"></li>
-                    <li><strong>Password</strong> – <input type="password"></li>
-                    <li><strong>Radio</strong> – <input type="radio"></li>
-                    <li><strong>Checkbox</strong> – <input type="checkbox"></li>
-                    <li><strong>Dropdown</strong> – <select> and <option></li>
-                    <li><strong>Textarea</strong> – <textarea></li>
-                    <li><strong>Submit</strong> – <input type="submit"></li>
-                    <li><strong>Reset</strong> – <input type="reset"></li>
-                </ul>
-
-                <h4>Special Form Elements</h4>
-                <ul>
-                    <li><strong><keygen></strong> – Generates a key pair for form submission</li>
-                    <li><strong><datalist></strong> – Provides a list of pre-defined options</li>
-                    <li><strong><output></strong> – Represents the result of a calculation</li>
-                </ul>
-            </div>
 
             <!-- Lesson 4 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 4: HTML5 Input Types</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(4)">
+                Lesson 4: HTML5 Input Types
             </button>
-            <div class="panel">
-                <h3>✪ L4: HTML5 INPUT TYPES ✪</h3>
-
-                <h4>Input Type Tags in HTML5</h4>
-                <table>
-                    <tr><th>Type</th><th>Description</th></tr>
-                    <tr><td>color</td><td>Color picker</td></tr>
-                    <tr><td>date</td><td>Date picker</td></tr>
-                    <tr><td>email</td><td>Email input field</td></tr>
-                    <tr><td>month</td><td>Month and year picker</td></tr>
-                    <tr><td>datetime</td><td>Date and time picker</td></tr>
-                    <tr><td>number</td><td>Numeric input field</td></tr>
-                    <tr><td>range</td><td>Slider control</td></tr>
-                    <tr><td>search</td><td>Search field</td></tr>
-                    <tr><td>time</td><td>Time picker</td></tr>
-                    <tr><td>url</td><td>URL input field</td></tr>
-                    <tr><td>tel</td><td>Telephone input field</td></tr>
-                </table>
-
-                <h4>Form Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>autocomplete</td><td>Enables/disables autocomplete</td></tr>
-                    <tr><td>novalidate</td><td>Disables form validation</td></tr>
-                </table>
-
-                <h4>Input Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>autofocus</td><td>Focuses input on page load</td></tr>
-                    <tr><td>formaction</td><td>Overrides form's action</td></tr>
-                    <tr><td>formenctype</td><td>Overrides form's enctype</td></tr>
-                    <tr><td>formmethod</td><td>Overrides form's method</td></tr>
-                    <tr><td>formnovalidate</td><td>Overrides form's novalidate</td></tr>
-                    <tr><td>formtarget</td><td>Overrides form's target</td></tr>
-                    <tr><td>height/width</td><td>Specifies dimensions</td></tr>
-                    <tr><td>multiple</td><td>Allows multiple selections</td></tr>
-                    <tr><td>pattern</td><td>Specifies validation pattern</td></tr>
-                    <tr><td>placeholder</td><td>Shows placeholder text</td></tr>
-                    <tr><td>required</td><td>Makes field mandatory</td></tr>
-                </table>
-            </div>
 
             <!-- Lesson 5 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 5: Input Element Types and Attributes</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(5)">
+                Lesson 5: Input Element Types and Attributes
             </button>
-            <div class="panel">
-                <h3>✪ L5: INPUT ELEMENTS ✪</h3>
-
-                <h4><input> Element Types</h4>
-                <table>
-                    <tr><th>Type</th><th>Description</th></tr>
-                    <tr><td>text</td><td>Single-line text input</td></tr>
-                    <tr><td>password</td><td>Hidden text input</td></tr>
-                    <tr><td>checkbox</td><td>Checkbox (multiple selections)</td></tr>
-                    <tr><td>radio</td><td>Radio button (single selection)</td></tr>
-                    <tr><td>submit</td><td>Submit button</td></tr>
-                    <tr><td>reset</td><td>Reset button</td></tr>
-                    <tr><td>file</td><td>File upload</td></tr>
-                    <tr><td>image</td><td>Image as submit button</td></tr>
-                </table>
-
-                <h4>Input Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>name</td><td>Name of the input field</td></tr>
-                    <tr><td>type</td><td>Type of input</td></tr>
-                    <tr><td>size</td><td>Width of input field (characters)</td></tr>
-                    <tr><td>value</td><td>Default value</td></tr>
-                    <tr><td>checked</td><td>Pre-selected option</td></tr>
-                </table>
-
-                <h4>Creating Textboxes and Text Areas</h4>
-                <pre><input type="text" name="username">
-<textarea name="message" rows="4" cols="30"></textarea></pre>
-            </div>
 
             <!-- Lesson 6 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 6: Radio Buttons, Checkboxes, and Dropdowns</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(6)">
+                Lesson 6: Radio Buttons, Checkboxes, and Dropdowns
             </button>
-            <div class="panel">
-                <h3>✪ L6: FORM CONTROLS ✪</h3>
-
-                <h4>Radio Buttons</h4>
-                <p>Radio buttons allow only ONE selection from a group of options.</p>
-                <pre><input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="radio" name="gender" value="other" checked> Other</pre>
-
-                <h4>Checkboxes</h4>
-                <p>Checkboxes allow MULTIPLE selections.</p>
-                <pre><input type="checkbox" name="hobby1" value="reading"> Reading
-<input type="checkbox" name="hobby2" value="gaming" checked> Gaming
-<input type="checkbox" name="hobby3" value="sports"> Sports</pre>
-
-                <h4>Dropdown Menus</h4>
-                <p>Using <select> and <option> tags:</p>
-                <pre><select name="country">
-  <option value="ph">Philippines</option>
-  <option value="us" selected>United States</option>
-  <option value="uk">United Kingdom</option>
-</select></pre>
-
-                <h4><select> and <option> Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>name</td><td>Name of the dropdown</td></tr>
-                    <tr><td>size</td><td>Number of visible options</td></tr>
-                    <tr><td>value</td><td>Value sent to server</td></tr>
-                    <tr><td>selected</td><td>Pre-selected option</td></tr>
-                </table>
-            </div>
 
             <!-- Lesson 7 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 7: Feedback Forms and File Upload</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson1stQuarterModal(7)">
+                Lesson 7: Feedback Forms and File Upload
             </button>
-            <div class="panel">
-                <h3>✪ L7: FEEDBACK FORMS & FILE UPLOAD ✪</h3>
-
-                <h4>Feedback Form</h4>
-                <pre><form action="mailto:email@example.com" method="post" enctype="text/plain">
-  Name: <input type="text" name="name"><br>
-  Message: <textarea name="message"></textarea><br>
-  <input type="submit" value="Send">
-</form></pre>
-
-                <h4>Form Attributes</h4>
-                <table>
-                    <tr><th>Attribute</th><th>Description</th></tr>
-                    <tr><td>action</td><td>URL where form data is sent</td></tr>
-                    <tr><td>method</td><td>HTTP method (GET/POST)</td></tr>
-                    <tr><td>enctype</td><td>Encoding type for form data</td></tr>
-                </table>
-
-                <h4>Submit and Reset Buttons</h4>
-                <pre><input type="submit" value="Submit">
-<input type="reset" value="Reset"></pre>
-
-                <h4>File Upload</h4>
-                <pre><input type="file" name="myfile" accept=".pdf,.doc,.docx"></pre>
-
-                <h4>Accept Attribute Values</h4>
-                <table>
-                    <tr><th>Value</th><th>Description</th></tr>
-                    <tr><td>.pdf, .doc</td><td>File extensions</td></tr>
-                    <tr><td>audio/*</td><td>All audio files</td></tr>
-                    <tr><td>video/*</td><td>All video files</td></tr>
-                    <tr><td>image/*</td><td>All image files</td></tr>
-                    <tr><td>media_type</td><td>Specific media type</td></tr>
-                </table>
-            </div>
 
             <h3> Events</h3>
-            <button class="accordion">
-                <span class="accordion-text">Buwan ng Wika</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(1)">
+                Buwan ng Wika
             </button>
-            <div class="panel">
-                <p><img src="images/BW1.jpg" alt="Buwan ng Wika Image 1" /></p>
-                <p><img src="images/BW2.jpg" alt="Buwan ng Wika Image 2" /></p>
-            </div>
-            <button class="accordion">
-                <span class="accordion-text">Intrams</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(2)">
+                Intrams
             </button>
-            <div class="panel">
-                <p><img src="images/intra1.jpg" alt="Intrams Image 1" /></p>
-                <p><img src="images/intra2.jpg" alt="Intrams Image 2" /></p>
-                <video width="500" controls>
-                    <source src="images/intra.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <button class="accordion">
-                <span class="accordion-text">Cluster Meet</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(3)">
+                Cluster Meet
             </button>
-            <div class="panel">
-                <p><img src="images/cluster1.jpg" alt="Cluster Meet Image 1" /></p>
-                <p><img src="images/cluster2.jpg" alt="Cluster Meet Image 2" /></p>
-            </div>
 
             <h2> 3rd Quarter </h2>
             <h3> Lessons </h3>
-            <button class="accordion">
-                <span class="accordion-text">Lesson 1: Typography</span>
-                <span class="arrow">&#9662;</span>
+
+            <button class="lesson-btn" onclick="openLesson3rdQuarterModal(1)">
+                Lesson 1: Typography
             </button>
-            <div class="panel">
-                <h3>Typography</h3>
-                <p>★ A generic font such as Sans-serif or Serif may be specified at the end of the list to ensure that if the indicated font is not available, it will just use the available generic font in the browser.</p>
-                <p>★ If you do not specify any font family, the browser will use the default font - Times New Roman (serif) and Default font size = 16</p>
 
-                <h4>CSS Styles</h4>
-                <table>
-                    <tr><th>Style</th><th>Example</th><th>Function</th></tr>
-                    <tr><td>font-weight</td><td>font-weight:bold</td><td>Changes the font style to bold</td></tr>
-                    <tr><td>font-style</td><td>font-style:italic</td><td>Changes the font style to italics</td></tr>
-                    <tr><td>font-family</td><td>font-family:serif</td><td>Specifies which typeface to use</td></tr>
-                    <tr><td>font-size</td><td>font-size:89%</td><td>Specifies the font size</td></tr>
-                    <tr><td>color</td><td>color:purple</td><td>Specifies the text color</td></tr>
-                    <tr><td>font-variant</td><td>font-variant:small-caps</td><td>Transforms the text</td></tr>
-                    <tr><td>letter-spacing</td><td>letter-spacing:-2px</td><td>Changes spacing between letters</td></tr>
-                    <tr><td>word-spacing</td><td>word-spacing:10px</td><td>Changes spacing between words</td></tr>
-                    <tr><td>line-height</td><td>line-height:1.50</td><td>Changes height between lines</td></tr>
-                    <tr><td>text-align</td><td>text-align:center</td><td>Specifies alignment of text block</td></tr>
-                </table>
-
-                <h4>List Styles</h4>
-                <table>
-                    <tr><th>Style</th><th>Example</th></tr>
-                    <tr><td>list-style-type</td><td>list-style-type:lower-alpha</td></tr>
-                    <tr><td>list-style-image</td><td>Use an image as bullet</td></tr>
-                </table>
-            </div>
-
-            <!-- Lesson 2 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 2: Indenting Text</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson3rdQuarterModal(2)">
+                Lesson 2: Indenting Text
             </button>
-            <div class="panel">
-                <h3>Font & Text Properties</h3>
-                <h4>Font Property</h4>
-                <table>
-                    <tr><th>Property</th><th>Definition</th><th>Values</th></tr>
-                    <tr><td>font-family</td><td>Typeface</td><td>Any typeface</td></tr>
-                    <tr><td>font-style</td><td>Italics, oblique, normal</td><td>italic, oblique, normal</td></tr>
-                    <tr><td>font-weight</td><td>Thickness of characters</td><td>normal, bold, 100–900</td></tr>
-                    <tr><td>font-size</td><td>Size of text</td><td>xx-small → xx-large, px/pt/%</td></tr>
-                    <tr><td>font-variant</td><td>Small caps</td><td>normal, small-caps</td></tr>
-                </table>
 
-                <h4>Text Property</h4>
-                <table>
-                    <tr><th>Property</th><th>Definition</th><th>Values</th></tr>
-                    <tr><td>text-align</td><td>Alignment</td><td>left, right, center, justify</td></tr>
-                    <tr><td>text-decoration</td><td>Decoration</td><td>none, underline, overline, linethrough, blink, sub, super</td></tr>
-                    <tr><td>text-transform</td><td>Case</td><td>none, capitalize, uppercase, lowercase</td></tr>
-                    <tr><td>line-height</td><td>Spacing per line</td><td>normal, px, pt, %</td></tr>
-                    <tr><td>text-indent</td><td>First line indent</td><td>length, percentage</td></tr>
-                </table>
-            </div>
-
-            <!-- Lesson 3 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 3: Box Model</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson3rdQuarterModal(3)">
+                Lesson 3: Box Model
             </button>
-            <div class="panel">
-                <h3>Box Model</h3>
-                <p>
-                    ★ Each element exists in its own box with margins, borders, padding, and content.<br>
-                    ★ Control dimensions with height and width.<br>
-                    ★ Use block-level tags to define boxes.
-                </p>
 
-                <h4>Element Positioning</h4>
-                <p>
-                    ★ Position property allows precise placement.<br>
-                    ★ Schemes: static, relative, absolute, fixed.<br>
-                    ★ Can inherit from body.
-                </p>
-
-                <table>
-                    <tr><th>Property</th><th>Value</th><th>Description</th></tr>
-                    <tr><td>position</td><td>static</td><td>Default position</td></tr>
-                    <tr><td>position</td><td>relative</td><td>Relative to normal position</td></tr>
-                    <tr><td>position</td><td>absolute</td><td>Defined from reference point</td></tr>
-                    <tr><td>position</td><td>fixed</td><td>Same as absolute but fixed on scroll</td></tr>
-                </table>
-
-                <h4>Offset</h4>
-                <p>
-                    ★ Sets distance of element from another.<br>
-                    ★ Works with position property.
-                </p>
-                <table>
-                    <tr><th>Property</th><th>Value</th></tr>
-                    <tr><td>top</td><td>&lt;value&gt;</td></tr>
-                    <tr><td>right</td><td>&lt;value&gt;</td></tr>
-                    <tr><td>bottom</td><td>&lt;value&gt;</td></tr>
-                    <tr><td>left</td><td>&lt;value&gt;</td></tr>
-                </table>
-
-                <h4>Float</h4>
-                <p>
-                    ★ Controls block element placement.<br>
-                    ★ Important to set width for float control.
-                </p>
-            </div>
-            <button class="accordion">
-  <span class="accordion-text">Lesson 4: Formatting Borders and Tables</span>
-  <span class="arrow">&#9662;</span>
-</button>
-<div class="panel">
-  <h3>Float Property</h3>
-  <table>
-    <tr><th>Property</th><th>Value</th></tr>
-    <tr><td>float</td><td>left</td></tr>
-    <tr><td>float</td><td>right</td></tr>
-    <tr><td>float</td><td>none</td></tr>
-  </table>
-  <p>★ Wrapping text around an element can be done using the float property in CSS.</p>
-
-  <h3>Background Property</h3>
-  <p>★ A shorthand notation for all background properties.<br>
-     ★ Values are separated by spaces, not commas.</p>
-
-  <h4>Background Color</h4>
-  <ul>
-    <li>Set color to a specific value (e.g., <code>red</code>)</li>
-    <li>Hexadecimal (e.g., <code>#000000</code>)</li>
-    <li>RGB values (e.g., <code>rgb(255,0,0)</code>)</li>
-    <li>Percentage values (e.g., <code>rgb(100%,0%,0%)</code>)</li>
-    <li>Inherit from parent (e.g., <code>inherit</code>)</li>
-  </ul>
-
-  <h4>Background Image</h4>
-  <ul>
-    <li>Set to an image (e.g., <code>url("clouds.jpg")</code>)</li>
-    <li>No background (<code>none</code>)</li>
-    <li>Inherit from parent (<code>inherit</code>)</li>
-  </ul>
-
-  <h4>Background Repeat</h4>
-  <ul>
-    <li><code>repeat</code> – default</li>
-    <li><code>repeat-x</code> – horizontal repeat</li>
-    <li><code>repeat-y</code> – vertical repeat</li>
-    <li><code>no-repeat</code> – no repetition</li>
-    <li><code>inherit</code> – follow parent</li>
-  </ul>
-
-  <h4>Background Position</h4>
-  <p>★ Position can be specified by values or percentages (e.g., <code>100px 50px</code>, <code>25% 10%</code>).<br>
-     ★ Keywords can also be used (e.g., <code>top</code>, <code>center</code>, <code>bottom</code>, <code>left</code>, <code>right</code>).</p>
-
-  <h4>Background Attachment</h4>
-  <ul>
-    <li><code>scroll</code> – background scrolls with document (default)</li>
-    <li><code>inherit</code> – follow parent’s attachment</li>
-    <li><code>fixed</code> – background stays fixed when scrolling</li>
-  </ul>
-</div>
+            <button class="lesson-btn" onclick="openLesson3rdQuarterModal(4)">
+                Lesson 4: Formatting Borders and Tables
+            </button>
 
             <h3> Events</h3>
-            <button class="accordion">
-                <span class="accordion-text">Booklandia</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(4)">
+                Booklandia
             </button>
-            <div class="panel">
-                <p><img src="images/booklandia .JPG" alt="" /></p>
-            </div>
-            <button class="accordion">
-                <span class="accordion-text">Values Pop</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(5)">
+                Values Pop
             </button>
-            <div class="panel">
-                <p><img src="images/vpop.JPG" alt="" /></p>
-            </div>
-
-            <button class="accordion">
-                <span class="accordion-text">Math Month</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(6)">
+                Math Month
             </button>
-            <div class="panel">
-                <p><img src="images/math.JPG" alt="" /></p>
-            </div>
-
-            <button class="accordion">
-                <span class="accordion-text">Credits</span>
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="panel">
-                <p>Credits to the GREATEST OF ALL TIME ACHIIII (Jade Isabelle Imperial of 9 - Family) for THE most SKIBIDI pictures of all time</p>
-            </div>
 
             <h2> 4th Quarter </h2>
             <h3> Lessons </h3>
-            <h2>JavaScript Lessons Accordion</h2>
 
-            <!-- Lesson 1 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 1: Intro to JavaScript</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson4thQuarterModal(1)">
+                Lesson 1: Intro to JavaScript
             </button>
-            <div class="panel">
-                <h3>✪ L1: INTRO TO JAVASCRIPT ✪</h3>
-                <p>✦ Script - a set of computer instructions or commands that puts together or connects existing components to accomplish a new related task</p>
-                <p>
-                    ✦ JavaScript
-                    <br>○ It is a powerful client-side scripting language that is interpreted by the web browser.
-                    <br>○ It was created by Brendan Eich.
-                    <br>○ It enables web developers and designers to build more functional and interactive websites.
-                    <br>○ It was originally called Mocha, then Live Script, and finally JavaScript.
-                    <br>○ It is NOT associated with Java.
-                    <br>○ It is case-sensitive.
-                    <br>○ It is normally embedded in your HTML code.
-                </p>
-                <h4>Characteristics of JavaScript</h4>
-                <ol>
-                    <li>Interpreted Language – requires a browser to run</li>
-                    <li>Scripted Language – performs simple repetitive tasks</li>
-                    <li>Client-Side Scripting – executed on the user’s machine</li>
-                    <li>Object-Oriented Programming – treats every element as an object</li>
-                </ol>
-                <h4>JavaScript Terms</h4>
-                <ul>
-                    <li>Objects – items that exist in the browser</li>
-                    <li>Methods – actions performed on/by an object</li>
-                    <li>Properties – subsections of an object</li>
-                    <li>Event – something that happens (loading, clicking, hovering)</li>
-                    <li>Parameter – data describing characteristics of an object</li>
-                    <li>Type – variable type (integer, string, float, Boolean)</li>
-                    <li>Type conversion – converting a variable from one type to another</li>
-                </ul>
-            </div>
 
-            <!-- Lesson 2 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 2: More About JavaScript</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson4thQuarterModal(2)">
+                Lesson 2: More About JavaScript
             </button>
-            <div class="panel">
-                <h3>L2: MORE ABOUT JS :: C.S</h3>
-                <p>★ JavaScript is client-side, high-level, interpreted, and object-oriented.</p>
-                <ul>
-                    <li>Client-side: processed on the user’s computer</li>
-                    <li>High-level scripting: written close to English</li>
-                    <li>Interpreted: converted to machine code as it runs</li>
-                    <li>Object-based programming language</li>
-                    <li>Semi-colons optional but recommended</li>
-                </ul>
-                <h4>Some of the things JS can do:</h4>
-                <ol>
-                    <li>React to events</li>
-                    <li>Validate data</li>
-                    <li>Create cookies</li>
-                    <li>Enhance a webpage (pop-ups, animations, menus)</li>
-                </ol>
-                <h4>Features of JS:</h4>
-                <ul>
-                    <li>Supports structured programming syntax in C</li>
-                    <li>Dynamic typing</li>
-                    <li>Runs locally for faster interaction</li>
-                    <li>Detects user actions</li>
-                    <li>Combines with CSS for DHTML effects</li>
-                </ul>
-                <h4>Disadvantages:</h4>
-                <ul>
-                    <li>Some browsers don’t support JS</li>
-                    <li>Secrets in JS can be extracted</li>
-                </ul>
-            </div>
 
-            <!-- Lesson 3 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 3: JavaScript Syntax</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson4thQuarterModal(3)">
+                Lesson 3: JavaScript Syntax
             </button>
-            <div class="panel">
-                <h3>L3: JAVASCRIPT SYNTAX</h3>
-                <p>
-                    ★ JS and DOM can be exploited by malicious authors.<br>
-                    ★ Source code is sent to the client and can be reverse engineered.
-                </p>
-                <h4>JavaScript Terms</h4>
-                <ul>
-                    <li>W3C – ensures compatibility in standards</li>
-                    <li>DOM – interface to access/manipulate document contents</li>
-                    <li>Parsing – analyzing syntax to extract information</li>
-                </ul>
-                <h4>Document Object Properties & Methods</h4>
-                <table>
-                    <tr><th>Property</th><th>Description</th><th>Method</th><th>Description</th></tr>
-                    <tr><td>bgColor</td><td>Background color</td><td>write()</td><td>Writes text to document</td></tr>
-                    <tr><td>fgColor</td><td>Font color</td><td>writeln()</td><td>Writes text + newline</td></tr>
-                    <tr><td>Image</td><td>Set an image</td><td>getElementById()</td><td>Returns element by ID</td></tr>
-                    <tr><td>Location</td><td>Get/set URL path</td><td>getElementsByName()</td><td>Returns elements by name</td></tr>
-                </table>
-            </div>
 
-            <!-- Lesson 4 -->
-            <button class="accordion">
-                <span class="accordion-text">Lesson 4: Variables & Operators</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openLesson4thQuarterModal(4)">
+                Lesson 4: Variables & Operators
             </button>
-            <div class="panel">
-                <h3>L4: VARIABLES/OPERATORS</h3>
-                <h4>Syntax Guides</h4>
-                <table>
-                    <tr><th>Term</th><th>Use/Purpose</th><th>Symbol</th></tr>
-                    <tr><td>Quotes</td><td>Display text exactly</td><td>'text' or "text"</td></tr>
-                    <tr><td>Comments</td><td>// single line, /* */ multi-line</td><td>//, /* */</td></tr>
-                    <tr><td>Plus</td><td>Concatenate strings</td><td>+</td></tr>
-                </table>
-                <h4>Variables</h4>
-                <ul>
-                    <li>Stores information for reuse</li>
-                    <li>Container for values that can change</li>
-                    <li>Represents unknown quantities in math</li>
-                    <li>Represents storage in computer science</li>
-                </ul>
-            </div>
-
 
             <h3> Events</h3>
-            <button class="accordion">
-                <span class="accordion-text">BOTB</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(7)">
+                BOTB
             </button>
-            <div class="panel">
-                <p><img src="images/botb.jpg" alt="" /></p>
-            </div>
-            <button class="accordion">
-                <span class="accordion-text">Noli Me Tangere</span>
-                <span class="arrow">&#9662;</span>
+            <button class="lesson-btn" onclick="openEventModal(8)">
+                Noli Me Tangere
             </button>
-            <div class="panel">
-                <p><img src="images/noli.JPG" alt="" /></p>
-            </div>
+            <button class="lesson-btn" onclick="openEventModal(9)">
+                Ped Xing
+            </button>
 
-            <button class="accordion">
-                <span class="accordion-text">Ped Xing</span>
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="panel">
-                <p><img src="images/ped.jpg" alt="" /></p>
-            </div>
-
-            <button class="accordion">
-                <span class="accordion-text">Credits</span>
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="panel">
-                <p>Credits to the GREATEST OF ALL TIME ACHIIII (Jade Isabelle Imperial of 9 - Family) for THE most SKIBIDI pictures of all time</p>
+            <!-- Embedded Google Drive Video -->
+            <h2>4th Quarter Activity</h2>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1S_AuxlT-YRXd7fa8oveV1gddOMZrWzBi/preview" width="640" height="480" allow="autoplay"></iframe>
             </div>
 
         </div>
@@ -779,6 +217,15 @@
             <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
         </div>
 
+    </div>
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
     </div>
 
     <script src="assets/js.js"></script>

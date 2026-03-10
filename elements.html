@@ -32,7 +32,7 @@
 					<li><a href="generic.html">2nd Quarter A.P CONTENT</a></li>
 					<li class="active"><a href="elements.html">2nd Quarter I.C.T CONTENT</a></li>
 					<li><a href="4AP.html">4th Quarter A.P CONTENT</a></li>
-					<li><a href="generic.html">3rd and 4th Quarter ICT CONTENT</a></li>
+				<li><a href="generic2.html">3rd and 4th Quarter ICT CONTENT</a></li>
 				</ul>
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -57,52 +57,52 @@
 
 				<!-- Posts -->
 				<section class="posts">
-					<article>
+					<article onclick="openLessonModal(1)">
 						<header>
-							<a href="2nd QTR/Lesson 1.html"><h2>Lesson 1</a></h2>
+							<h2>Lesson 1</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
 						<p>Introduction to CSS</p>
 					</article>
-					<article>
+					<article onclick="openLessonModal(2)">
 						<header>
-							<a href="2nd QTR/Lesson 2.html"><h2>Lesson 2</a></h2>
+							<h2>Lesson 2</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
 						<p>CSS Structure and Style Sheets</p>
 
 					</article>
-					<article>
+					<article onclick="openLessonModal(3)">
 						<header>
 
-							<a href="2nd QTR/Lesson 3.html"><h2>Lesson 3</a></h2>
+							<h2>Lesson 3</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
 						<p>CSS Basics, Display, Span, and Div Tags</p>
 
 					</article>
-					<article>
+					<article onclick="openLessonModal(4)">
 						<header>
 
-							<a href="2nd QTR/Lesson 4.html"><h2>Lesson 4</a></h2>
+							<h2>Lesson 4</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
 						<p>CSS Rules and Classes</p>
 
 					</article>
-					<article>
+					<article onclick="openLessonModal(5)">
 						<header>
 
-							<a href="2nd QTR/Lesson 5.html"><h2>Lesson 5</a></h2>
+							<h2>Lesson 5</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
 						<p>CSS Positioning</p>
 
 					</article>
-					<article>
+					<article onclick="openLessonModal(6)">
 						<header>
 
-							<a href="2nd QTR/Lesson 6.html"><h2>Lesson 6</a></h2>
+							<h2>Lesson 6</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic16.jpg" alt="" /></a>
 						<p>CSS Dimensions and Pseudo-Classes</p>
@@ -124,52 +124,52 @@
 
 				<!-- Posts -->
 				<section class="posts">
-					<article>
+					<article onclick="openEventModal(1)">
 						<header>
-<a href="2nd QTR/1.html"><h2>Buwan ng Wika</a></h2>
+							<h2>Buwan ng Wika</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic17.jpg" alt="" /></a>
 
 					</article>
-					<article>
+					<article onclick="openEventModal(2)">
 						<header>
-							<a href="2nd QTR/2.html"><h2>Intrams</a></h2>
+							<h2>Intrams</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic18.jpg" alt="" /></a>
 
 
 					</article>
-					<article>
+					<article onclick="openEventModal(3)">
 						<header>
 
-							<a href="2nd QTR/3.html"><h2>Science Month</a></h2>
+							<h2>Science Month</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic19.jpg" alt="" /></a>
 
 
 					</article>
-					<article>
+					<article onclick="openEventModal(4)">
 						<header>
 
-							<a href="2nd QTR/4.html"><h2>AP Month</a></h2>
+							<h2>AP Month</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic20.jpg" alt="" /></a>
 
 
 					</article>
-					<article>
+					<article onclick="openEventModal(5)">
 						<header>
 
-							<a href="2nd QTR/5.html"><h2>Teacher's Day</a></h2>
+							<h2>Teacher's Day</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic21.jpg" alt="" /></a>
 
 
 					</article>
-					<article>
+					<article onclick="openEventModal(6)">
 						<header>
 
-							<a href="2nd QTR/6.html"><h2>Cluster Meet</a></h2>
+							<h2>Cluster Meet</h2>
 						</header>
 						<a href="#" class="image fit"><img src="images/pic22.jpg" alt="" /></a>
 
@@ -242,5 +242,15 @@
 
 		</div>
 
+		<!-- Modal -->
+		<div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+			<div class="modal-content" onclick="event.stopPropagation()">
+				<span class="modal-close" onclick="closeModal()">&times;</span>
+				<h2 id="modalTitle"></h2>
+				<div id="modalBody"></div>
+			</div>
+		</div>
+
+		<script src="assets/js.js"></script>
 	</body>
 </html>
